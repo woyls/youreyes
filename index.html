@@ -7,7 +7,12 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: #0d0d2b;
+      color: #fff;
+      overflow-x: hidden;
     }
 
     /* Fundo pixelado com estrelas */
@@ -59,22 +64,6 @@
       letter-spacing: 2px;
     }
 
-    button {
-      background: #ff7ecb;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background: #ff4fa8;
-    }
-
     .gallery {
       display: flex;
       justify-content: center;
@@ -122,10 +111,9 @@
 <body>
   <header>
     <h1>Your eyes are my direction</h1>
-    <button onclick="toggleMusic()">🎵 Play música 💖</button>
   </header>
 
-  <div class="gallery">
+ <div class="gallery">
     <div class="polaroid">
       <img src="images/sorriso.png" alt="foto1">
       <div class="caption">Seu sorriso me envolveu antes de qualquer toque. 💫</div>
@@ -151,12 +139,11 @@
       <div class="caption">Do pixel para o toque real. 🎮❤️</div>
     </div>
   </div>
-
   <footer>
     Feito com 💖 por você.
   </footer>
 
- 
+  <script>
     // Criar corações flutuando
     function createHeart() {
       const heart = document.createElement('div');
